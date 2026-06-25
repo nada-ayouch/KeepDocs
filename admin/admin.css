@@ -1,0 +1,764 @@
+/* =========================
+   ADMIN BODY
+========================= */
+.admin-body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f8fafc;
+    color:#0f172a;
+    overflow-x:hidden;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:220px;
+    height:100vh;
+    background:#0f172a;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.sidebar-logo{
+    font-size:24px;
+    color:#2563eb;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar-nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar-nav a{
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px;
+    border-radius:8px;
+    transition:0.3s;
+  
+}
+
+.sidebar-nav a:hover{
+    background:#ec4899;
+}
+
+
+/* logout */
+.logout-btn{
+    display:block;
+    margin-top:30px;
+    padding:12px;
+    text-align:center;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.logout-btn:hover{
+    background:#ec4899;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.main-content{
+    margin-left:220px;
+    padding:20px;
+    background:#f8fafc;
+    min-height:100vh;
+    box-sizing:border-box;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+.topbar{
+    background:#ffffff;
+    padding:15px 20px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    border:1px solid #e2e8f0;
+}
+
+.topbar h1{
+    font-size:20px;
+    color:#2563eb;
+}
+
+.admin-info{
+    color:#0f172a;
+    font-size:14px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.dashboard-cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:10px;
+}
+
+.card{
+    background:#ffffff;
+    flex:1;
+    min-width:200px;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:#ec4899;
+}
+
+.card h3{
+    color:#0f172a;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:24px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+
+
+/* =========================
+   CONTAINER
+========================= */
+.service-container{
+    background:#ffffff;
+    width:400px;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    margin-left: 25%;
+}
+
+/* TITLE */
+.service-title{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+/* =========================
+   FORM
+========================= */
+.service-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+
+
+/* =========================
+   BUTTON
+========================= */
+.service-btn{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.service-btn:hover{
+    background:#ec4899;
+    transform:translateY(-2px);
+}
+
+
+
+/* =========================
+   ACTION BAR
+========================= */
+.actions-bar{
+    margin:20px 0;
+}
+
+.add-service-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:15px;
+}
+
+.add-service-btn:hover{
+    background:#ec4899;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   TABLE
+========================= */
+.table-container{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    padding:10px;
+    overflow-x:auto;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.services-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.services-table thead{
+    background:#d1cccf;
+    color:rgb(0, 0, 0);
+}
+
+.services-table th{
+    padding:18px;
+    text-align:left;
+    color:#334155;
+    font-size:16px;
+    white-space: nowrap;
+}
+
+.services-table td{
+    padding:12px;
+    text-align:left;
+    border-bottom:1px solid #e2e8f0;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.services-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+
+
+/* =========================
+   BASE BUTTON
+========================= */
+
+
+.btn{
+    display:flex;
+    gap:10px;
+}
+
+.btn{
+    width:38px;
+    height:38px;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.view-btn{
+    background:#dbeafe;
+}
+
+.download-btn{
+    background:#dcfce7;
+}
+
+
+.delete-btn{
+    background:#fee2e2;
+}
+
+.action-btn:hover{
+    transform:scale(1.08);
+}
+
+.btn{
+    padding:8px 14px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+    color:white;
+}
+
+/* =========================
+   EDIT BUTTON
+========================= */
+.btn-edit
+{
+    background:#2563eb;
+}
+
+.btn-edit:hover{
+    background:#ec4899;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   DELETE BUTTON
+========================= */
+.btn-danger{
+    background:#0f172a;
+}
+
+.btn-danger:hover{
+    background:#ec4848;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   ALIGN BUTTONS IN TABLE
+========================= */
+td form{
+    display:inline-block;
+    margin-right:8px;
+}
+
+
+/* =========================
+   USER FORM CONTAINER
+========================= */
+
+.user-container{
+    width:700px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #e2e8f0;
+}
+
+
+/* TITLE */
+.user-title{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2563eb;
+}
+
+/* GRID */
+.user-form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+
+
+/* BUTTON */
+.user-btn{
+    width:30%;
+    display:block;
+    margin:20px auto 0;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+.user-btn:hover{
+    background:#ec4899;
+
+}
+
+/* =========================
+   FORM Group
+========================= */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+
+/* INPUT */
+.form-group select{
+    padding:12px;
+    border:1px solid #dbe2ea;
+    border-radius:8px;
+    outline:none;
+    border:1px solid #88898b;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#ec4899;
+    box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+/* textarea */
+.form-group textarea{
+    padding:12px;
+    border:1px solid #dbe2ea;
+    border-radius:8px;
+    outline:none;
+    resize:vertical;
+    min-height:120px;
+    width:100%;
+    box-sizing:border-box;
+}
+
+
+.form-group label{
+    font-size:14px;
+    color:#0f172a;
+    font-weight: bold;
+}
+
+/* INPUTS */
+.form-group input,
+.form-group textarea{
+    padding:12px;
+    border:1px solid #88898b;
+    border-radius:8px;
+    outline:none;
+    transition:0.3s;
+    font-size:14px;
+}
+
+
+/* DISABLED INPUT */
+.form-group input:disabled{
+    background:#f1f5f9;
+    color:#475569;
+    cursor:not-allowed;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+.back-container{
+    margin:20px 0;
+}
+
+.back-btn{
+    display:inline-block;
+    padding:10px 14px;
+    background:#0f172a;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+/* hover */
+.back-btn:hover{
+    background:#2563eb;
+    transform:translateY(-2px);
+}
+
+.back-btn::before{
+    content:"";
+}
+
+/* =========================
+   PROFILE CONTAINER
+========================= */
+.profile-container{
+    max-width:700px;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   TITLE
+========================= */
+.profile-title{
+    margin-bottom:30px;
+    font-size:28px;
+    color:#1e293b;
+    text-align:center;
+}
+
+/* =========================
+   FORM LAYOUT
+========================= */
+.profile-form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+
+
+/* =========================
+   BUTTON
+========================= */
+.profile-btn{
+    width:60%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+    margin:30px -130px 0 ;
+}
+
+
+.profile-btn:hover{
+    background:#ec4899;
+}
+
+
+
+.bloc{
+    background: #ffffff;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+    overflow-x: auto; /* permet scroll si écran petit */
+}
+
+/* TITLE */
+.bloc h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1e293b;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bloc h3::before{
+    content: "";
+    width: 6px;
+    height: 22px;
+    background: #2563eb;
+    border-radius: 4px;
+}
+
+/* TABLE */
+.bloc .tableau{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px; /* force scroll propre au lieu de casser design */
+}
+
+/* HEADER */
+.bloc .tableau th{
+    background: #d1cccf;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* CELLS */
+.bloc .tableau td{
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #334155;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* ROW HOVER */
+.bloc .tableau tr:hover{
+    background: #f1f5f9;
+    transition: 0.2s;
+}
+
+/* BADGE */
+.badge.valide{
+    background: #dcfce7;
+    color: #166534;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* OPTION: better spacing */
+.bloc .tableau tr{
+    transition: 0.2s;
+}
+
+/* PHOTO SECTION */
+
+.profile-photo-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+/* PHOTO */
+
+.photo-circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #2563eb;
+    box-shadow:0 5px 20px rgba(37,99,235,0.3);
+    margin-bottom:20px;
+}
+
+.photo-circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* BUTTONS */
+
+.upload-btn{
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.upload-btn:hover{
+    background:#ec4899;
+    transform:translateY(-2px);
+}
+
+.save-photo-btn{
+    background:#0f172a;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.save-photo-btn:hover{
+    background:#ec4899;
+}
+
+
+/* PHOTO SIDEBAR */
+.sidebar-photo-circle{
+    width:90px;
+    height:90px;
+    margin:20px auto;
+    border-radius:50%;
+    overflow:hidden;
+    border:3px solid #ffffff30;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f1f5f9;
+}
+
+.sidebar-photo-circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.search-form{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.search-form input[type="text"]{
+    width:280px;
+    padding:10px 15px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    outline:none;
+}
+
+.search-form input[type="text"]:focus{
+    border-color:#ec4899;
+}
+
+.search-form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.search-form button:hover{
+    background:#1d4ed8;
+}
+
+.pagination{
+    margin-top:20px;
+    display:flex;
+    gap:8px;
+    justify-content:center;
+}
+
+.pagination a{
+    padding:8px 12px;
+    border:1px solid #e5e7eb;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+    transition:0.2s;
+    background:white;
+}
+
+.pagination a:hover{
+    background:#2563eb;
+    color:white;
+    border-color:#2563eb;
+}
+
+/* page actuelle (optionnel) */
+.pagination a.active{
+    background:#2563eb;
+    color:white;
+    border-color:#2563eb;
+}
